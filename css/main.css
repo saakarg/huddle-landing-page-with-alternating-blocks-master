@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+:root {
+  --boxShadow: 0 0 7px rgba(0, 0, 0, 0.13);
+  --veryDarkCyan: hsl(192, 100%, 9%);
+  --veryPaleCyan: hsl(193, 100%, 96%);
+  --pink: hsl(322, 100%, 66%);
+  --greyishBlue: hsl(208, 11%, 55%);
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.cta,
+.subscribe-btn {
+  padding: 10px 35px;
+  font-size: 16px;
+  text-decoration: none;
+  background: var(--pink);
+  color: white;
+  display: inline-block;
+  border-radius: 35px;
+  margin-top: 10px;
+}
+
+.hero {
+  background: url(/images/bg-hero-mobile.svg);
+  background-color: var(--veryPaleCyan);
+}
+
+.hero .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+
+.hero .nav .logo {
+  width: 140px;
+}
+
+.hero .nav .try-it-free a {
+  padding: 10px 35px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hero .hero-wrapper {
+  padding: 30px 0;
+}
+
+.hero .hero-wrapper .hero-content {
+  margin: 65px 0;
+  text-align: center;
+}
+
+.hero .hero-wrapper .illustration {
+  width: 100%;
+}
+
+.main-body .cards-div {
+  padding: 2rem 0 1.5rem;
+}
+
+.main-body .cards-div .card {
+  -webkit-box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
+  border-radius: 25px;
+  padding: 16px;
+  margin: 35px 0;
+  padding: 20px;
+}
+
+.main-body .cards-div .card:nth-child(2) .card-content {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.main-body .cards-div .card .card-illustration {
+  width: 100%;
+}
+
+.main-body .cards-div .card .card-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-body .cards-div .card .card-content .card-heading {
+  font-size: 25px;
+}
+
+.main-body .cards-div .card .card-content .card-info {
+  color: var(--greyishBlue);
+}
+
+.main-body .subscribe {
+  background: white;
+  text-align: center;
+  padding: 30px 10px 40px;
+  -webkit-box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.main-body .subscribe .subscribe-btn {
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
+}
+
+.footer {
+  background: var(--veryDarkCyan);
+  padding: 4rem 0;
+}
+
+.footer .blox .first-block {
+  margin: 0 0 50px;
+}
+
+.footer .blox .first-block .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer .blox .first-block ul li {
+  list-style: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+.footer .blox .first-block ul li .icon {
+  font-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+.footer .blox .second-block ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.footer .blox .second-block ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .blox .last-block {
+  margin: 60px 0 20px;
+}
+
+.footer .blox .last-block .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .blox .last-block .social ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.footer .blox .last-block .social ul li a {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+/*Responsive*/
+@media (min-width: 575px) {
+  .container {
+    padding: 0 4rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 36px;
+  }
+  .hero {
+    background: url(/images/bg-hero-desktop.svg);
+    background-color: var(--veryPaleCyan);
+  }
+  .hero .nav .logo {
+    width: 190px;
+  }
+  .hero .hero-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .hero-wrapper .hero-content {
+    text-align: left;
+    max-width: 40%;
+  }
+  .hero .hero-wrapper .illustration {
+    max-width: 50%;
+  }
+  .main-body .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-body .card:nth-child(2) .card-content {
+    margin-top: 0 !important;
+  }
+  .main-body .card .card-content {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+    max-width: 45%;
+  }
+  .main-body .card .card-illustration {
+    max-width: 44%;
+  }
+  .footer .blox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .blox .first-block {
+    max-width: 30%;
+  }
+  .footer .blox .last-block {
+    margin: 0;
+  }
+  .footer .copyright {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1441px) {
+  body {
+    font-size: 28px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 56px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

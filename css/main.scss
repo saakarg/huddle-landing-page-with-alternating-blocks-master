@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+:root {
+  --boxShadow: 0 0 7px rgba(0, 0, 0, 0.13);
+  --veryDarkCyan: hsl(192, 100%, 9%);
+  --veryPaleCyan: hsl(193, 100%, 96%);
+  --pink: hsl(322, 100%, 66%);
+  --greyishBlue: hsl(208, 11%, 55%);
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+
+img {
+  width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 0 1rem;
+}
+
+.cta,
+.subscribe-btn {
+  padding: 10px 35px;
+  font-size: 16px;
+  text-decoration: none;
+  background: var(--pink);
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  border-radius: 35px;
+  margin-top: 10px;
+}
+
+.hero {
+  background: url(/images/bg-hero-mobile.svg);
+  background-color: var(--veryPaleCyan);
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+
+    .logo {
+      width: 140px;
+    }
+
+    .try-it-free {
+      a {
+        padding: 10px 35px;
+        text-decoration: none;
+        background: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 0%);
+        border-radius: 30px;
+        box-shadow: 0 4px 7px rgba($color: #000000, $alpha: 0.13);
+        cursor: pointer;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .hero-wrapper {
+    padding: 30px 0;
+
+    .hero-content {
+      margin: 65px 0;
+      text-align: center;
+    }
+
+    .illustration {
+      width: 100%;
+    }
+  }
+}
+
+.main-body {
+  .cards-div {
+    padding: 2rem 0 1.5rem;
+
+    .card {
+      box-shadow: var(--boxShadow);
+      border-radius: 25px;
+      padding: 16px;
+      margin: 35px 0;
+      padding: 20px;
+
+      &:nth-child(2) {
+        .card-content {
+          margin-top: 50px;
+          margin-bottom: 0;
+        }
+      }
+
+      .card-illustration {
+        width: 100%;
+      }
+
+      .card-content {
+        text-align: center;
+        margin-bottom: 50px;
+
+        .card-heading {
+          font-size: 25px;
+        }
+
+        .card-info {
+          color: var(--greyishBlue);
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    background: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 30px 10px 40px;
+    box-shadow: var(--boxShadow);
+    border-radius: 25px;
+    margin-bottom: 3rem;
+
+    .subscribe-btn {
+      box-shadow: 0 4px 7px rgba($color: #000000, $alpha: 0.13);
+    }
+  }
+}
+
+.footer {
+  background: var(--veryDarkCyan);
+  padding: 4rem 0;
+
+  .blox {
+    .first-block {
+      margin: 0 0 50px;
+
+      .logo {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          color: hsl(0, 0%, 100%);
+          display: flex;
+          margin: 15px 0;
+
+          .icon {
+            font-size: 20px;
+            margin: 0 15px 0 0;
+          }
+        }
+      }
+    }
+
+    .second-block {
+      ul {
+        li {
+          list-style: none;
+          margin: 15px 0;
+
+          a {
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+          }
+        }
+      }
+    }
+
+    .last-block {
+      margin: 60px 0 20px;
+
+      .social {
+        ul {
+          display: flex;
+          justify-content: center;
+
+          li {
+            list-style: none;
+            margin: 0 10px;
+
+            a {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: none;
+              color: hsl(0, 0%, 100%);
+              border: 1px solid hsl(0, 0%, 100%);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+}
+
+/*Responsive*/
+
+@media (min-width: 575px) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 36px;
+  }
+
+  .hero {
+    background: url(/images/bg-hero-desktop.svg);
+    background-color: var(--veryPaleCyan);
+
+    .nav {
+      .logo {
+        width: 190px;
+      }
+    }
+
+    .hero-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .hero-content {
+        text-align: left;
+        max-width: 40%;
+      }
+
+      .illustration {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .main-body {
+    .card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &:nth-child(2) {
+        .card-content {
+          margin-top: 0 !important;
+        }
+      }
+
+      .card-content {
+        text-align: left !important;
+        margin-bottom: 0 !important;
+        max-width: 45%;
+      }
+
+      .card-illustration {
+        max-width: 44%;
+      }
+    }
+  }
+
+  .footer {
+    .blox {
+      display: flex;
+      justify-content: space-around;
+
+      .first-block {
+        max-width: 30%;
+      }
+
+      .last-block {
+        margin: 0;
+      }
+    }
+    .copyright {
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  body {
+    font-size: 28px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 56px;
+  }
+}
